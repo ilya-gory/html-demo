@@ -1,0 +1,36 @@
+.specifies {
+	@include media-down(lg) {
+		margin-top: px2rem(34);
+	}
+	~ .pros {
+		width: 268px !important;
+		&:before {
+			@include size(268, 163);
+			border-radius: 0;
+		}
+		@each $i in all-include, service-level, good-location, additional-services {
+			&.#{$i} {
+				&:before {
+					background: url('/img/photos/#{$i}.jpg');
+				}
+			}
+		}
+		span {
+			display: block;
+			width: 60%;
+			margin: 0 auto;
+		}
+		@include media-down(lg) {
+			padding: 0 !important;
+			box-sizing: content-box;
+			@include media-between(md, lg) {
+				&:nth-of-type(odd) {
+					padding-right: px2rem(5) !important;
+				}
+				&:nth-of-type(even) {
+					padding-left: px2rem(5) !important;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,3 @@
+@function photo($name) {
+	@return url('/img/photos/#{$name}.jpg')
+}

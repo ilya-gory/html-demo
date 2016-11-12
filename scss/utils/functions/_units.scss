@@ -1,0 +1,18 @@
+@function strip-units($v) {
+	@if unitless($v) {
+		@return $v;
+	}
+	@return $v / ( $v * 0 + 1 );
+}
+
+/// @param {number} $px - number of pixels
+/// @param {number} $base - base font fize
+/// @param {bool} $u - append unit
+/// @return {string|number}
+@function px2rem($px, $base: $base-font-size, $u: true) {
+	$v: strip-units($px) / strip-units($base);
+	@if $u == false {
+		@return $v;
+	}
+	@return #{$v}rem;
+}

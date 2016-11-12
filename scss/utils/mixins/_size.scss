@@ -1,0 +1,25 @@
+@mixin size($w,$h:$w,$u:px) {
+	@if unitless($w) {
+		$w: $w+$u;
+	}
+	@if unitless($h) {
+		$h: $h+$u;
+	}
+	width: $w;
+	height: $h;
+}
+
+@mixin font-size($f: null, $w: null, $l: null) {
+	@if $f != null {
+		@if unitless($f) {
+			$f: px2rem($f);
+		}
+		font-size: $f;
+	}
+	@if $w != null {
+		font-weight: $w;
+	}
+	@if $l != null {
+		line-height: $l;
+	}
+}

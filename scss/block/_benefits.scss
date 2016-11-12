@@ -1,0 +1,52 @@
+// benefits
+.head + .container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	@include media-down(lg) {
+		justify-content: center;
+		margin-bottom: -#{px2rem(46)};
+	}
+	h2 {
+		width: 100%;
+	}
+	.pros {
+		text-align: center;
+		&:before {
+			margin-bottom: px2rem(24);
+			@include media-down(md) {
+				margin-bottom: px2rem(20);
+			}
+		}
+	}
+}
+
+.benefits {
+	~ .pros {
+		width: 17%;
+		@include font-size(14, $l: $golden-ratio);
+		&:before {
+			display: block;
+			content: '';
+			background: $color-red no-repeat center;
+			@include size(64);
+			border-radius: 64px;
+			margin: 0 auto;
+		}
+		@each $i in building, searching, reserving, commenting {
+			&.#{$i}:before {
+				background-image: url('/img/ico/#{$i}.png');
+			}
+		}
+		@include media-down(lg) {
+			width: 50%;
+			margin-bottom: px2rem(25);
+			box-sizing: border-box;
+			padding: 0 px2rem(64);
+		}
+		@include media-down(md) {
+			width: 100%;
+			padding: 0 1rem;
+		}
+	}
+}

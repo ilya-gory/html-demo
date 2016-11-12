@@ -1,0 +1,47 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	@include font-size($base-font-size, 100);
+}
+
+strong {
+	font-weight: 600;
+}
+
+h1, h2 {
+	display: block;
+	text-align: center;
+	small {
+		margin-top: px2rem(10);
+	}
+}
+
+h1 {
+	@include font-size(40, 100);
+	margin: px2rem(67) 0 px2rem(80) 0;
+	small {
+		@include font-size(17, 100);
+	}
+}
+
+h2 {
+	@include font-size(33, 100);
+	margin: px2rem(70) 0 px2rem(50) 0;
+	small {
+		@include font-size(14, 100);
+	}
+	@include media-down(md) {
+		@include font-size(25);
+		margin: px2rem(60) 0 px2rem(35) 0;
+	}
+}
+
+h3 {
+	@include font-size(25, 100);
+	margin: 0 0 px2rem(36) 0;
+}
+
+h1, h2, .header {
+	small {
+		display: block;
+	}
+}
