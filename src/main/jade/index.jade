@@ -71,7 +71,7 @@ block  body
 		.gallery
 			each i in gallery
 				- var hk = i == 'happy-kids'
-				img(src='/img/photos/' + i + '.jpg',class=hk ? 'big' : '')
+				img(src=_shared.base + 'img/photos/' + i + '.jpg',class=hk ? 'big' : '')
 			.clearfix
 
 	+subscribe-block(4)
@@ -89,6 +89,6 @@ block  body
 		script(src='/assets/magnific-popup/jquery.magnific-popup.js')
 		script(src='/assets/jquery.inputmask/inputmask/inputmask.js')
 		script(src='/assets/jquery.inputmask/inputmask/inputmask.extensions.js')
-	script(src='/js/index.js')
+	script(src=_shared.base + 'js/index.js')
 	script(type='text/html',id='popup-tpl')
 		include _inc/popup
