@@ -953,7 +953,7 @@ h1 small, h2 small, .header small {
 }
 
 .head {
-  background: no-repeat url("/img/prlx-1.png"), no-repeat center/cover url("/img/bg-1.jpg");
+  background: no-repeat url("./img/prlx-1.png"), no-repeat center/cover url("./img/bg-1.jpg");
 }
 
 @media all and (min-width: 1141px) {
@@ -970,7 +970,7 @@ h1 small, h2 small, .header small {
 
 @media all and (max-width: 749px) {
   .head {
-    background-image: url("/img/prlx-1-sm.png"), url("/img/bg-1.jpg");
+    background-image: url("./img/prlx-1-sm.png"), url("./img/bg-1.jpg");
     background-position: center calc(100% - (70px + 15rem)), center;
   }
 }
@@ -1298,13 +1298,13 @@ h1 small, h2 small, .header small {
 }
 
 .subscribe-block.subscribe-2 {
-  background-image: url("/img/prlx-2.png"), url("/img/bg-2.jpg");
+  background-image: url("./img/prlx-2.png"), url("./img/bg-2.jpg");
   background-position: calc(50% + 540px) center, left center;
 }
 
 @media all and (min-width: 749px) and (max-width: 1141px) {
   .subscribe-block.subscribe-2 {
-    background-image: url("/img/prlx-2-md.png"), url("/img/bg-2.jpg");
+    background-image: url("./img/prlx-2-md.png"), url("./img/bg-2.jpg");
     background-position: right center, left center;
   }
 }
@@ -1317,13 +1317,13 @@ h1 small, h2 small, .header small {
 
 @media all and (max-width: 749px) {
   .subscribe-block.subscribe-2 {
-    background: no-repeat left center/cover url("/img/bg-2.jpg");
+    background: no-repeat left center/cover url("./img/bg-2.jpg");
   }
 }
 
 @media all and (min-width: 751px) {
   .subscribe-block.subscribe-3 {
-    background-image: url("/img/prlx-3.png"), url("/img/bg-3.jpg");
+    background-image: url("./img/prlx-3.png"), url("./img/bg-3.jpg");
   }
 }
 
@@ -1341,7 +1341,7 @@ h1 small, h2 small, .header small {
 
 @media all and (max-width: 749px) {
   .subscribe-block.subscribe-3 {
-    background-image: url("/img/prlx-3-sm.png"), url("/img/bg-3-sm.jpg");
+    background-image: url("./img/prlx-3-sm.png"), url("./img/bg-3-sm.jpg");
     padding-bottom: 287px;
     background-size: 100%, cover;
     background-position: center bottom, left bottom;
@@ -1349,7 +1349,7 @@ h1 small, h2 small, .header small {
 }
 
 .subscribe-block.subscribe-4 {
-  background-image: url("/img/prlx-4.png"), url("/img/bg-2.jpg");
+  background-image: url("./img/prlx-4.png"), url("./img/bg-2.jpg");
   margin-bottom: 0;
 }
 
@@ -1367,7 +1367,7 @@ h1 small, h2 small, .header small {
 
 @media all and (max-width: 749px) {
   .subscribe-block.subscribe-4 {
-    background-image: url("/img/prlx-4.png"), url("/img/bg-3-sm.jpg");
+    background-image: url("./img/prlx-4.png"), url("./img/bg-3-sm.jpg");
     padding-bottom: 315px;
     background-size: 110%, cover;
     background-position: center bottom, bottom;
@@ -1422,19 +1422,19 @@ h1 small, h2 small, .header small {
 }
 
 .benefits ~ .pros.building:before {
-  background-image: url("/img/ico/building.png");
+  background-image: url("./img/ico/building.png");
 }
 
 .benefits ~ .pros.searching:before {
-  background-image: url("/img/ico/searching.png");
+  background-image: url("./img/ico/searching.png");
 }
 
 .benefits ~ .pros.reserving:before {
-  background-image: url("/img/ico/reserving.png");
+  background-image: url("./img/ico/reserving.png");
 }
 
 .benefits ~ .pros.commenting:before {
-  background-image: url("/img/ico/commenting.png");
+  background-image: url("./img/ico/commenting.png");
 }
 
 @media all and (max-width: 1139px) {
@@ -1470,19 +1470,19 @@ h1 small, h2 small, .header small {
 }
 
 .specifies ~ .pros.all-include:before {
-  background: url("/img/photos/all-include.jpg");
+  background: url("./img/photos/all-include.jpg");
 }
 
 .specifies ~ .pros.service-level:before {
-  background: url("/img/photos/service-level.jpg");
+  background: url("./img/photos/service-level.jpg");
 }
 
 .specifies ~ .pros.good-location:before {
-  background: url("/img/photos/good-location.jpg");
+  background: url("./img/photos/good-location.jpg");
 }
 
 .specifies ~ .pros.additional-services:before {
-  background: url("/img/photos/additional-services.jpg");
+  background: url("./img/photos/additional-services.jpg");
 }
 
 .specifies ~ .pros span {
@@ -1618,11 +1618,11 @@ h1 small, h2 small, .header small {
 }
 
 .reasons .r1 {
-  background-image: url("/img/photos/happy-girl.jpg"), url("/img/photos/sea-pavilion.jpg");
+  background-image: url("./img/photos/happy-girl.jpg"), url("./img/photos/sea-pavilion.jpg");
 }
 
 .reasons .r2 {
-  background-image: url("/img/photos/devices.jpg");
+  background-image: url("./img/photos/devices.jpg");
 }
 
 @media all and (min-width: 1141px) {
@@ -1645,7 +1645,7 @@ h1 small, h2 small, .header small {
 @media all and (max-width: 749px) {
   .reasons .r2 {
     padding-bottom: 243px;
-    background-image: url("/img/photos/devices-sm.jpg");
+    background-image: url("./img/photos/devices-sm.jpg");
   }
   .reasons .r2:after {
     bottom: 160px;
@@ -1653,11 +1653,11 @@ h1 small, h2 small, .header small {
 }
 
 .reasons .r3 {
-  background-image: url("/img/photos/happy-grannies.jpg"), url("/img/photos/fit-girls.jpg");
+  background-image: url("./img/photos/happy-grannies.jpg"), url("./img/photos/fit-girls.jpg");
 }
 
 .reasons .r4 {
-  background-image: url("/img/photos/auhm-shanti.jpg");
+  background-image: url("./img/photos/auhm-shanti.jpg");
 }
 
 @media all and (min-width: 1141px) {
@@ -1690,7 +1690,7 @@ h1 small, h2 small, .header small {
 }
 
 .reasons .r5 {
-  background-image: url("/img/photos/savings.jpg");
+  background-image: url("./img/photos/savings.jpg");
 }
 
 @media all and (min-width: 1141px) {
@@ -1746,7 +1746,7 @@ h1 small, h2 small, .header small {
 .thank-you {
   height: calc(100vh - 1.5rem);
   text-align: center;
-  background: center/cover url("/img/thnx.jpg") no-repeat;
+  background: center/cover url("./img/thnx.jpg") no-repeat;
   color: #fff;
   padding-top: 1.5rem;
 }
