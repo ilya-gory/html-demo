@@ -1,3 +1,7 @@
+@function lnk($path) {
+	@return url($base-path + $path);
+}
+
 @function photo($name) {
-	@return url('/img/photos/#{$name}.jpg')
+	@return lnk('img/photos/#{$name}.jpg')
 }

@@ -35,7 +35,7 @@
 		}
 		@each $i in building, searching, reserving, commenting {
 			&.#{$i}:before {
-				background-image: url('/img/ico/#{$i}.png');
+				background-image: lnk('img/ico/#{$i}.png');
 			}
 		}
 		@include media-down(lg) {

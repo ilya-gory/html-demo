@@ -1,7 +1,7 @@
 .thank-you {
 	height: calc(100vh - #{px2rem(24)});
 	text-align: center;
-	background: center/cover url('/img/thnx.jpg') no-repeat;
+	background: center/cover lnk('img/thnx.jpg') no-repeat;
 	color: #fff;
 	padding-top: px2rem(24);
 	h1 {

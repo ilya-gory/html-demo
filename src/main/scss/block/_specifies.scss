@@ -11,7 +11,7 @@
 		@each $i in all-include, service-level, good-location, additional-services {
 			&.#{$i} {
 				&:before {
-					background: url('/img/photos/#{$i}.jpg');
+					background: photo($i);
 				}
 			}
 		}

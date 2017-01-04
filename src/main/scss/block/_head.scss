@@ -11,7 +11,7 @@
 }
 
 .head {
-	background: no-repeat url('/img/prlx-1.png'), no-repeat center/cover url('/img/bg-1.jpg');
+	background: no-repeat lnk('img/prlx-1.png'), no-repeat center/cover lnk('img/bg-1.jpg');
 	@include media-up(lg) {
 		background-position: calc(50% + (#{map-get($container-max-widths, lg) / 2} - 313.5px)) calc(100% - 35px), center;
 	}
@@ -19,7 +19,7 @@
 		background-position: center calc(100% - 80px - 3rem - 50px), center;
 	}
 	@include media-down(md) {
-		background-image: url('/img/prlx-1-sm.png'), url('/img/bg-1.jpg');
+		background-image: lnk('img/prlx-1-sm.png'), lnk('img/bg-1.jpg');
 		background-position: center calc(100% - (70px + 15rem)), center;
 	}
 	* {
