@@ -1,0 +1,47 @@
+buildscript {
+	repositories {
+		mavenCentral()
+		mavenLocal()
+	}
+	dependencies {
+		classpath 'pro.aril.web:lay-plugin:0.0.1'
+		classpath 'com.craigburke.gradle:client-dependencies:1.1.4'
+	}
+}
+
+apply plugin: 'pro.aril.web.lay-plugin'
+apply plugin: 'com.craigburke.client-dependencies'
+
+group 'demo-landing'
+version '0.0.1'
+
+lay {
+	styleFileNames = ['desktop']
+	devSymlinks = ['img', 'js', 'assets']
+	distZipName = 'Demo_Landing'
+	optiPngDirs = ['img']
+	optiJpgDirs = ['img']
+	jsDestination = 'js/index.js'
+	jsSources = ['index.js']
+	distCopies = [
+			copySpec {
+				from 'src/main/img'
+				into 'img'
+			}
+	]
+}
+clientDependencies {
+	installDir = 'src/main/assets/vendor'
+	bower {
+		'normalize.css'('4.2.0') {
+			include 'normalize.css'
+			rename 'normalize.css', 'normalize.scss'
+		}
+		'magnific-popup'('1.1.0') {
+			rename 'magnific-popup.css', 'magnific-popup.scss'
+		}
+		'jquery.inputmask'('3.3.1') {
+			include '/extra/phone-codes/phone-codes.js', '/extra/phone-codes/phone-ru.js'
+		}
+	}
+}
