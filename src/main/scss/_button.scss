@@ -8,6 +8,10 @@
 	outline: none;
 	@include font-size(14, 600);
 	cursor: pointer;
+	transition: background $animation-speed;
+	&:hover {
+		background: saturate($color-red, 15%);
+	}
 }
 
 .btn-outline {
